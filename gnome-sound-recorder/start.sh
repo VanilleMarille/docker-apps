@@ -5,8 +5,6 @@ docker run -it --rm \
     -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
     -e DISPLAY=$DISPLAY \
     --net=host \
-    -v $HOME/.dockerapps/librewolf:/home/user/ \
-    -v $HOME/Downloads:/home/user/Downloads \
     -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native \
     -v ~/.config/pulse/cookie:/root/.config/pulse/cookie \
-    librewolf
+    gnome-sound-recorder
