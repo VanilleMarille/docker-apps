@@ -17,14 +17,14 @@ Run **dockerbuild.sh** to create new Docker Container
 This will also create an **.dockerapps** config Folder into your **$HOME** directory.
 This folder is used to make the containered app persistent.
 Not every app is using this folder. 
-* Example: **gnome-sound-recorder** - is not using this folder
-* Example: **firefox** is using this folder
+  * Example: **gnome-sound-recorder** - is not using this folder
+  * Example: **firefox** is using this folder
 
 
 Run **start.sh** to run the containered application.
 The server access control program **xhost** is used to connect to the container.
-  You may need to install **xhost**.
-  If you use Arch Linux install **xorg-xhost** package
+  * You may need to install **xhost**.
+  * If you use Arch Linux install **xorg-xhost** package
  
  
 Run **install.sh** to copy an **.desktop** file and a modified version of **start.sh** to you System.
