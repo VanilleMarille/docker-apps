@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Sound Recorder
+Icon=gnome-sound-recorder
+Type=Application
+Exec=dockerapps-gnome-sound-recorder
+Categories=AudioVideo;
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox
+Icon=firefox
+Type=Application
+Exec=dockerapps-firefox
+Categories=Network;
+
