@@ -14,7 +14,7 @@ Server access control program for Xorg
 ## How to use
 
 Run **dockerbuild.sh** to create new Docker Container
-This will also create an **.dockerapps** config Folder in your **$HOME** directory.
+This will also create an **.dockerapps** config Folder into your **$HOME** directory.
 This folder is used to make the containered app persistent.
 Not every app is using this folder. 
   Example: **gnome-sound-recorder** - is not using this folder
