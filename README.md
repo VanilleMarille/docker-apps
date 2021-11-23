@@ -31,3 +31,8 @@ The server access control program **xhost** is used to connect to the container.
 Run **install.sh** to copy an **.desktop** file and a modified version of **start.sh** to you System.
 This will made it possible to start the Application from you **GUI-Menu**
 After installing you can also start the Container from terminal with **dockerapps-programmname**
+
+
+## Notes
+
+Librewolf is an example how to create an app with an **AUR PKGBUILD** file.
