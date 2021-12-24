@@ -1,6 +1,6 @@
 xhost +
 
-MYPATH=(pwd)
+MYPATH=$(pwd)
 
 docker run -it --rm \
     --device /dev/snd \
