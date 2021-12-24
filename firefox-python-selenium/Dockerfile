@@ -8,4 +8,4 @@ RUN chown -R user /home/user
 USER user
 
 EXPOSE 8887
-CMD firefox
+CMD /home/user/selenium.d/start.py
