@@ -5,4 +5,4 @@ RUN pacman -S --noconfirm python geckodriver python-selenium
 
 
 EXPOSE 8887
-CMD chown -R root /root; bash
+CMD chown -R root /root; /opt/selenium.d/start.py
