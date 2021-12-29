@@ -4,6 +4,7 @@ import os
 import glob
 import subprocess
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 #Select newest profile#
 saved_profiles=(os.environ['HOME']) + '/.dockerapps/firefox-python-selenium/profiles'
@@ -17,7 +18,7 @@ for profile in profiles:
 
 profile=(saved_profiles + "/profile_" + str(profile_count))
 print("Selecting Profile: " + profile)
-exit()
+profile=webdriver.FirefoxProfile(profile)
 
 #Configure selenium#
 profile.set_preference("dom.webdriver.enabled", False)
@@ -42,6 +43,9 @@ for convert in current_profile:
 #Save new profile and quit selenium#
 input("Press any key to save new profile")
 
-subprocess.run(["cp", "-r", current_profile, "/home/user"]) 
+profile_count += 1
+save_to_profiles=(saved_profiles + "/profile_" + str(profile_count)) 
+print(save_to_profiles)
+subprocess.run(["cp", "-r", current_profile, save_to_profiles]) 
 
 browser.quit()
