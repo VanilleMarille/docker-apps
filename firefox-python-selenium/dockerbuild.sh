@@ -1,6 +1,9 @@
 #!/bin/bash
 
+appname=firefox-python-selenium
 username=$(whoami)
+
+
 if ! groups $username | grep -q 'docker'; then
 	echo ---------------------------------
 	echo ERROR:
@@ -21,6 +24,6 @@ if [ -z "$checkimage" ]; then
 	exit
 fi
 
-mkdir -p $HOME/.dockerapps/firefox-python-selenium
+mkdir -p $HOME/.dockerapps/$appname/profiles.d
 docker build -t firefox-python-selenium .
 
